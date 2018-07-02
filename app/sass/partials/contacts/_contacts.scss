@@ -1,0 +1,217 @@
+/*============================
+=          CONTACTS          =
+============================*/
+.contacts-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 40px 0;
+	border: 1px solid #e6e6e6;
+	border-right: none;
+	border-left: none;
+	max-width: 650px;
+	margin: 16px auto 40px;
+	font-size: 0;
+
+	.contacts-list__item {
+		a {
+			display: inline-block;
+			color: $b;
+			font: bold 16px/16px $akr;
+			margin: 4px;
+
+			&:before {
+				content: "";
+				line-height: 16px;
+				height: 16px;
+				width: 16px;
+				display: inline-block;
+				margin-right: 7px;
+				vertical-align: bottom;
+			}
+		}
+	}
+
+	.contacts-list__item_adress {
+		a {
+			&:before {
+				background: transparent url('../images/contacts/point.jpg') center no-repeat;
+			}			
+		}
+	}
+	.contacts-list__item_phone {
+		a {
+			&:before {
+				background: transparent url('../images/contacts/phone.jpg') center no-repeat;
+			}			
+		}
+	}
+	.contacts-list__item_email {
+		a {
+			&:before {
+				background: transparent url('../images/contacts/mail.jpg') center no-repeat;
+			}			
+		}
+	}
+	.contacts-list__item_skype {
+		a {
+			&:before {
+				background: transparent url('../images/contacts/skype.jpg') center no-repeat;
+			}			
+		}
+	}
+
+	@include media($t) {
+		flex-direction: row;
+		justify-content: space-around;
+
+		.contacts-list__item {
+			min-width: 50%;
+		}
+
+		.contacts-list__item_adress {
+			order: 1;
+		}
+		.contacts-list__item_phone {
+			order: 3;
+		}
+		.contacts-list__item_email {
+			order: 2;
+		}
+		.contacts-list__item_skype {
+			order: 4;
+		}		
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+form {
+    text-align: left;
+    font-family: $akr;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+
+    span {
+        color: $blue;
+    }
+
+    a:visited {
+    	color: $blue;
+    }
+}
+
+input, textarea {
+    height: 40px;
+    font: bold 16px/38px $akr;
+    padding: 0 16px;
+    border: 1px solid #acacac;
+    width: 100%;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+
+    &:focus {
+        border-color: $blue;
+        color: $blue;
+        box-shadow: 0 5px 20px 0 rgba(59, 121, 240, 0.3);
+    }
+    
+}
+textarea {
+    height: 112px;
+    line-height: 20px;
+    padding: 12px 16px;
+}
+input[type="checkbox"] {
+    display: none;
+
+    &+label {
+        text-align: center;
+        color: $blue;
+        max-width: 180px;
+        margin: 0 auto;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #acacac;
+            border-radius: 5px;
+            vertical-align: bottom;
+            text-align: center;
+            margin-right: 8px;
+            font: bold 24px/24px $rob;
+        }
+    }
+
+
+    &:checked + label:before {
+        content: "\2714";
+    }
+}
+
+
+button.btn {
+    display: block;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+
+
+
+
+.contacts-form {
+	form {
+		margin: 40px auto;
+		max-width: 450px;		
+	}
+
+	.contact-form__item {
+		margin-bottom: 24px;
+	}
+	.contact-form__item_full, .contact-form__item_check, .contact-form__item_button {
+		margin-bottom: 0;
+	}
+	.contact-form__item_check, .contact-form__item_button {
+		margin-top: 40px;
+	}
+
+	.contact-form__item_button {
+		margin: 40px auto 24px;
+	}
+
+	@include media($t) {
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}		
+
+		.contact-form__item_half {
+			width: 200px;
+		}
+		.contact-form__item_full {
+			width: 100%;
+		}
+		.contact-form__item_check {
+			display: flex;
+
+			label {
+				margin: auto;
+				margin-left: 0;
+			}
+		}
+	}	
+}

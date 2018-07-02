@@ -1,0 +1,84 @@
+/*===================================
+=            BASE MODULE            =
+===================================*/
+$output-bourbon-deprecation-warnings: false !default;
+
+@import "bourbon";
+@import "neat";
+
+
+/* VARIABLES */
+
+
+$webkit-font-smoothing: true;
+$default-feature: min-width;
+
+
+$hd:					1920px; // HD
+$d: 					1366px;	// desktop
+$t:						768px;	// tablet
+$ml: 					480px;  // mobile ladscape
+$m:	  					320px;	// mobile
+
+$cont: 					1366px;
+
+
+/* FONTS */
+// @include font-face("FontAwesome", "../fonts/fa/fontawesome-webfont");
+// @include font-face("Icomoon", "../fonts/icomoon/icomoon");
+@include font-face("Akrobat", "../fonts/akrobat/Akrobat-Bold");
+
+
+$faw: 'FontAwesome';
+$ico: 'Icomoon';
+$akr: 'Akrobat', sans-serif;
+$rob: 'Roboto', sans-serif;
+
+/* COLORS */
+
+
+$w: #fff;
+$b: #000;
+
+$blue: #3B79F0;
+$black: #1f1f1f;
+$pink: #ff036e;
+
+/*=====  End of BASE MODULE  ======*/
+
+/*================================
+=            SASS PARTS            =
+================================*/
+
+@import "components/_mixins.scss";
+@import "components/_common.scss";
+
+
+@import "partials/_typograph.scss";
+@import "partials/_common.scss";
+
+@import "partials/_header.scss";
+@import "partials/_footer.scss";
+
+
+@import "partials/home/_home-main.scss";
+@import "partials/home/_home-about.scss";
+@import "partials/home/_home-products.scss";
+@import "partials/home/_home-articles.scss";
+
+@import "partials/contacts/_contacts.scss";
+@import "partials/gears/_gears.scss";
+@import "partials/news/_news.scss";
+
+
+@import "partials/_main.scss";
+@import "partials/_cf7.scss";
+
+
+
+
+
+
+
+/*=====  End of SASS PARTS  ======*/
+

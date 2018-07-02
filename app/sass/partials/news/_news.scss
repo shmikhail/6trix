@@ -1,0 +1,133 @@
+/*============================
+=            NEWS            =
+============================*/
+.news-wrapper {
+	max-width: 288px;
+	overflow: hidden;
+	margin: 24px auto;
+
+	@include media($t) {
+		max-width: 688px;
+		margin: 48px auto 24px;
+	}
+
+	@include media($d) {
+		max-width: 1200px;
+	}		
+}
+.news-item {
+	margin-bottom: 40px;
+	text-align: left;
+
+	.news-description {
+		height: 160px;		
+	}
+
+	.news-thumbnail {
+		width: 288px;
+		height: 216px;
+		margin-bottom: 12px;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+	}
+
+	h1, p {
+		overflow: hidden;    
+		text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;		
+	}
+
+	h1 {
+		max-height: 80px;
+		margin-bottom: 4px;
+	}
+
+	p {
+		max-height: 70px;
+		margin-bottom: 8px;		
+	}
+
+	.link-more {
+		text-decoration: underline;
+		font-family: $rob;
+		color: $blue;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	@include media($t) {
+		display: flex;
+
+		.news-description {
+			height: 180px;	
+			width: 408px;	
+		}
+		.news-thumbnail {
+			width: 240px;
+			height: 180px;
+			margin-right: 40px;
+		}
+	}	
+
+	@include media($d) {
+		.news-description {
+			height: 270px;	
+			width: 780px;	
+		}
+		.news-thumbnail {
+			width: 360px;
+			height: 270px;
+			margin-right: 72px;
+		}
+		p {
+			display: block;
+			max-height: 148px
+		}
+	}		
+}
+
+
+
+.news-single-thumbnail {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 170px;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: cover !important;
+
+	@include media($d) {
+		height: 360px;
+	}
+}
+.news-single-item {
+	position: relative;
+}
+.news-single-headline {
+	height: 138px;
+	display: flex;
+	margin-bottom: 16px;
+
+	@include media($d) {
+		height: 328px;
+	}
+
+	h1 {
+		padding: 16px 32px;
+		margin: auto;
+		display: block;
+		color: $w;
+		background: $black;
+		line-height: 34px;
+	}
+}
+.news-single-content {
+	margin-top: 40px;
+}

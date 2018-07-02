@@ -1,0 +1,53 @@
+/*============================
+=         HOME-ABOUT         =
+============================*/
+.about-content {
+	max-width: 85%;
+	margin: auto;
+	margin-left: 0;
+	position: relative;
+
+	.btn {
+		margin-top: 15px;
+	}
+
+	@include media($t) {
+		max-width: 60%;
+	}
+	@include media($d) {
+		max-width: 50%;
+	}	
+}
+.about-decor {
+	display: none;
+
+	@include media($t) {
+		position: absolute;
+		display: block;
+		top: 100%;
+		right: -135px;
+		width: 730px;
+		height: 818px;
+		transform: translate(10%, -35%);
+	}
+	@include media($d) {
+		top: 15%;
+		transform: translate(0);
+	}
+}
+.people {
+	position: absolute;
+	top: 35px;
+	left: 65px;
+	width: 578px;
+	height: 783px;
+	background: transparent url(../images/main-about-decor/people.png);
+}
+.clouds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 730px;
+	height: 667px;
+	background: transparent url(../images/main-about-decor/clouds.png);
+}

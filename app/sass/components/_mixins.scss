@@ -1,0 +1,113 @@
+
+
+@mixin center($position: absolute, $align: '') {
+  position: #{$position};
+
+  @if $align == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @else if $align == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+
+  @else if $align == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } 
+
+} 
+
+@mixin fade($type, $time:.2s, $delay:$time) {
+
+  @if $type == 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility $time $delay, opacity $time 0s;
+  }
+
+  @else if $type == 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s 0s, opacity $time $delay;
+  }
+
+}
+
+@mixin omega-reset($nth, $context: null) {
+  @if $context == null { 
+    &:nth-child(#{$nth}) { margin-right: flex-gutter(); } 
+  } @else { 
+    &:nth-child(#{$nth}) { margin-right: flex-gutter($context); } 
+  }
+  &:nth-child(#{$nth}+1) { clear: none; }
+}
+
+
+
+
+
+
+
+
+
+
+@mixin side-pad {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  @include media($tab-s) {
+
+  }
+  @include media($tab-l) {
+    
+  }
+}
+
+@mixin side-pad_advice {
+  @include side-pad;
+  @include media($tab-s) {
+    padding-left: 75px !important;
+    padding-right: 50px !important;
+  }
+  @include media($desk) {
+    padding-left: 125px !important;
+    padding-right: 85px !important;    
+  }
+}
+
+@mixin left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin absolute-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin v-out($translateY: 40px) {
+  visibility: hidden;
+  opacity: 0;
+  @include transform(translate3d(0,$translateY,0));
+  @include transition(transform  cubic-bezier(.66,.13,.15,.59) .3s, opacity ease-in-out .4s, visibility 0s .3s );
+}
+
+@mixin v-in {
+  @include transition(transform  cubic-bezier(.66,.13,.15,.59) .3s, opacity ease-in-out .4s, visibility 0s 0s );
+  @include transform(translate3d(0,0,0));
+  opacity: 1;
+  visibility: visible;
+}

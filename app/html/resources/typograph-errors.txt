@@ -1,0 +1,13 @@
+.headline: 		h1 	(margin, padding, background)
+
+header: 		li a 	(all)
+
+.block_main: 		h3, p 	(font, color, height)
+
+.block_about: 		h1 	(color)
+
+.block_products:	p 	(line-height, color, margin)
+
+.block_articles:	h2 	(margin, height)
+
+footer: 		p 	(font-famly, margin, color)

@@ -1,0 +1,166 @@
+/*============================
+=           FOOTER           =
+============================*/
+.pp-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 15px 0 20px;
+
+	&.pp-list_payments {
+		justify-content: center;
+		border-top: 1px solid  #f1f1f1;
+	}
+
+	@include media($d) {
+		&.pp-list_payments {
+			justify-content: space-around;
+			justify-content: space-evenly;
+		}	
+	}	
+}
+.pp-item {
+	width: 80px;
+	height: 50px;
+	margin: 10px;
+
+    &.amatic {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -0px 0px;
+    }
+    &.apollogames {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -80px 0px;
+    }
+    &.asiagaming {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -160px 0px;
+    }
+    &.asialivetech {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -240px 0px;
+    }
+    &.authenticgaming {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -320px 0px;
+    }
+    &.betsoft {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -400px 0px;
+    }
+    &.boominggames {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -480px 0px;
+    }
+    &.drivemedia {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -560px 0px;
+    }
+    &.endorphia {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -640px 0px;
+    }
+    &.ezugi {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -720px 0px;
+    }
+    &.gameart {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -800px 0px;
+    }
+    &.greenbet {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -880px 0px;
+    }
+    &.isoftbet {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -960px 0px;
+    }
+    &.habanero {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1040px 0px;
+    }
+    &.microgaming {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1120px 0px;
+    }
+    &.mrslotty {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1200px 0px;
+    }
+    &.netent {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1280px 0px;
+    }
+    &.og {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1360px 0px;
+    }
+    &.playson {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1440px 0px;
+    }
+    &.pragmaticplay {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1520px 0px;
+    }
+    &.quickspin {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1600px 0px;
+    }
+    &.sagaming {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1680px 0px;
+    }
+    &.spinomenai {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1760px 0px;
+    }
+    &.tomhorngaming {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -1840px 0px;
+    }
+    &.visa {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: 0 -50px;
+    }
+    &.mastercard {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -80px -50px;
+    }
+    &.neteller {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -160px -50px;
+    }
+    &.skrill {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -240px -50px;
+    }
+    &.paypal {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -320px -50px;
+    }
+    &.paysafecard {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -400px -50px;
+    }
+    &.sofort {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -480px -50px;
+    }
+    &.ecoplay {
+    	background: transparent url(../images/pp-sprite.png);
+    	background-position: -560px -50px;
+    }
+}
+
+footer {
+	background: $black;
+
+	p {
+		margin: 10px 0;
+		text-align: center;
+		color: $w;
+		font-family: $akr;
+	}
+}

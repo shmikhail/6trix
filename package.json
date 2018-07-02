@@ -1,0 +1,40 @@
+{
+  "name": "shumilov",
+  "version": "1.0.0",
+  "description": "gulp build",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shumilov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filter": "^3.0.1",
+    "gulp-ftp": "^1.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7",
+    "gulp.spritesmith": "^6.2.1",
+    "imagemin-pngquant": "^4.2.2",
+    "main-bower-files": "^2.11.1",
+    "node-neat": "^1.7.2",
+    "run-sequence": "^1.1.5",
+    "yargs": "^3.32.0"
+  }
+}
