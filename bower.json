@@ -1,27 +1,27 @@
 {
-  "name": "shumilov",
+  "name": "leto",
   "description": "gulp build",
   "main": "Gulpfile.js",
   "authors": [
-    "shumilov"
+    "leto"
   ],
   "license": "ISC",
   "moduleType": [],
   "homepage": "",
   "dependencies": {
-    "jquery": "~3.1.1",
-    "font-awesome": "~4.7.0"
-  },
-  "overrides": {
-    "font-awesome": {
-      "main": [
-        "scss/font-awesome.scss",
-        "fonts/fontawesome-webfont.eot",
-        "fonts/fontawesome-webfont.svg",
-        "fonts/fontawesome-webfont.ttf",
-        "fonts/fontawesome-webfont.woff",
-        "fonts/fontawesome-webfont.woff2"
-      ]
-    }
+    "jquery": "~3.3.1"
+  //   "font-awesome": "~4.7.0"
+  // },
+  // "overrides": {
+  //   "font-awesome": {
+  //     "main": [
+  //       "scss/font-awesome.scss",
+  //       "fonts/fontawesome-webfont.eot",
+  //       "fonts/fontawesome-webfont.svg",
+  //       "fonts/fontawesome-webfont.ttf",
+  //       "fonts/fontawesome-webfont.woff",
+  //       "fonts/fontawesome-webfont.woff2"
+  //     ]
+  //   }
   }
 }

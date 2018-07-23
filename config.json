@@ -1,12 +1,12 @@
 {
 	"developers": {
-		"shum": "\\home\\m\\Downloads\\6trix\\6trix_proj\\app\\wp-theme\\"
+		"leto": "\\home\\m\\Downloads\\***name***\\***name***_proj\\app\\wp-theme\\"
     },
     "upload": {
-	    "host"	: "31.24.228.180",
+	    "host"	: "ip",
 	    "port"	: 21,
-	    "dest"	: "public_html/wp-content/themes/trix/",
-	    "log"	: "admin_trix",
-	    "pass"	: "zk3K1dkExv"
+	    "dest"	: "public_html/wp-content/themes/***name_theme***/",
+	    "log"	: "login",
+	    "pass"	: "pass"
 	}
 }
