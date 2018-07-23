@@ -32,6 +32,7 @@ var gulp 		 	= require('gulp'),
 	fs 				= require('fs');
 
 
+
 var allTasks 		= ['sass', 'icons', 'fonts', 'images', 'html', 'wp', 'js'];
 
 
