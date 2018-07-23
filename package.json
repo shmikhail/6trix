@@ -1,12 +1,12 @@
 {
-  "name": "shumilov",
+  "name": "leto",
   "version": "1.0.0",
   "description": "gulp build",
   "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "shumilov",
+  "author": "leto",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.12.3",
